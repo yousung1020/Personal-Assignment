@@ -1,1 +1,1 @@
-# Personal-Assignment
+# 해당 레포지토리는 개인 과제 레포지토리입니다.
