@@ -135,9 +135,40 @@ $ git pull [원격 저장소 별칭] [불러들일 브랜치 이름]
 
 ## 8. fetch
 
-## 9. branch
+* Git에서 fetch는 원격 저장소에서 코드를 수동으로 내려받는 작업을 하는 명령어입니다. pull과 달리 fetch는 내려받은 후 현재 브랜치와 자동 병합하지 않습니다.
 
-## 10. merge
+```git
+$ git fetch [원격 저장소 url] [불러들일 브랜치 이름]
+```
+> fetch 사용법
+
+* 원격 저장소에서 파일을 하나 더 만들고 fetch 하겠습니다.
+
+![image](https://user-images.githubusercontent.com/65354879/204139140-acd80680-a997-4516-9f8e-b65918cb72db.png)
+
+* fetch.py 파일을 생성하였습니다. 이를 fetch 하고 log를 해보겠습니다.
+
+<img src=https://user-images.githubusercontent.com/65354879/204139253-6ece388a-9151-461a-a900-b9cc7790b87b.png height=500 weight=500>
+
+* pull과 달리 fetch는 자동으로 브랜치 병합을 하지 않아 커밋된 이력이 남지 않는 것을 확인할 수 있습니다.
+
+## 9. merge
+
+* Git에서 merge는 브랜치에 대해 병합을 하는 명령어입니다. Fast-Forward 병합과 3-way 병합 알고리즘이 있습니다.
+
+```git
+$ git merge [options] [브랜치 이름]
+```
+> merge 사용 방법
+
+* 아까 전 fetch 하였던 파일 내역을 merge를 통해 커밋 이력에 추가해봅시다.
+
+<img src=https://user-images.githubusercontent.com/65354879/204139977-5a235f78-6906-47cd-98b0-56194c2665ea.png weight=500 height=500>
+
+* merge를 한 후 log를 통해 확인해본 결과 커밋 이력에 fetch.py가 생겼음을 확인할 수 있습니다.
+
+
+## 10. branch
 
 ## 11. rebase
 
