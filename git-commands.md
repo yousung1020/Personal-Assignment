@@ -150,9 +150,22 @@ $ git fetch [원격 저장소 url] [불러들일 브랜치 이름]
 
 <img src=https://user-images.githubusercontent.com/65354879/204139253-6ece388a-9151-461a-a900-b9cc7790b87b.png height=500 weight=500>
 
-* pull과 달리 fetch는 자동으로 브랜치 병합을 하지 않아 커밋된 이력이 남지 않는 것을 확인할 수 있습니다.
+* pull과 달리 fetch는 자동으로 브랜치 병합을 하지 않아 커밋된 이력이 남지 않는 것을 확인할 수 있습니다. 이는 merge를 통해 수동 병합할 수 있습니다.
 
-## 9. merge
+## 9. branch
+
+* Git에서 branch는 독립적으로 어떤 작업을 진행하기 위한 개념입니다. 필요에 의해 만들어지는 각각의 브랜치는 다른 브랜치의 영향을 받지 않기 때문에, 여러 작업을 동시에 진행할 수 있습니다.
+
+```git
+$ git checkout [options] [브랜치 이름]
+$ git branch [options] [브랜치 이름]
+$ git switch [options] [브랜치 이름]
+...etc
+```
+
+* Git에서 브랜치에 관련한 명령어는 매우 많습니다. checkout, branch, switch 정도가 있습니다.
+
+## 10. merge
 
 * Git에서 merge는 브랜치에 대해 병합을 하는 명령어입니다. Fast-Forward 병합과 3-way 병합 알고리즘이 있습니다.
 
@@ -166,10 +179,7 @@ $ git merge [options] [브랜치 이름]
 <img src=https://user-images.githubusercontent.com/65354879/204139977-5a235f78-6906-47cd-98b0-56194c2665ea.png weight=500 height=500>
 
 * merge를 한 후 log를 통해 확인해본 결과 커밋 이력에 fetch.py가 생겼음을 확인할 수 있습니다.
-
-
-## 10. branch
-
 ## 11. rebase
+
 
 ## 12. reset
