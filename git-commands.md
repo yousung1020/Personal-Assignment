@@ -16,10 +16,6 @@ $ git add [디렉토리 or 파일 이름]
 
 ![image](https://user-images.githubusercontent.com/65354879/204133648-73f2c233-fea1-4054-8fd6-5ab4ce484ac2.png)
 
-
-
-
-
 ## 2. commit
 
 * Git에서 커밋은 의미 있는 변경 작업들을 저장소에 기록하는 명령어입니다.
@@ -179,7 +175,11 @@ $ git merge [options] [브랜치 이름]
 <img src=https://user-images.githubusercontent.com/65354879/204139977-5a235f78-6906-47cd-98b0-56194c2665ea.png weight=500 height=500>
 
 * merge를 한 후 log를 통해 확인해본 결과 커밋 이력에 fetch.py가 생겼음을 확인할 수 있습니다.
+
+* 충돌이 발생하였을 경우에는 merge --abort 옵션을 통해 병합을 취소하거나 코드를 수정함으로써 병합을 진행할 수 있습니다.
+
 ## 11. rebase
+
 
 
 ## 12. reset
