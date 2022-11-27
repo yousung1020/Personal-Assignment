@@ -140,3 +140,15 @@ y = 20
 print(add(x, y))
 '''
 ```
+
+* **다음과 같은 결과를 확인할 수 있습니다.**
+
+```python
+def add(x, y):
+    return x + y
+
+x = 10
+y = 20
+
+print(add(x, y))
+```
