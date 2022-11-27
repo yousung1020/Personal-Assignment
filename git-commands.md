@@ -68,9 +68,48 @@ $ git show [options]
 
 ## 5. clone 
 
+* Git에서 clone은 원격 저장소에 있는 레포지토리의 파일를 복제하는 명령어 입니다.
 
+```git
+$ git clone [url]
+```
+> clone 사용법
+
+* 저의 python 레포지토리를 클론하여 보겠습니다.
+
+<img src=https://user-images.githubusercontent.com/65354879/204135900-70520ade-171a-459f-82d4-4889e0205a77.png weight=400 height=400>
+
+* 다음 명령어를 실행한 후 로컬 저장소에 잘 반영되었는지 확인하겠습니다.
+
+![image](https://user-images.githubusercontent.com/65354879/204136024-84534843-1cb7-498a-aeea-a6c4e0f5eba3.png)
+
+![image](https://user-images.githubusercontent.com/65354879/204136084-abf64ec4-1573-43e7-a5d2-2e4c810aaab0.png)
+
+* 로컬 저장소에 잘 반영된 것을 확인할 수 있습니다.
 
 ## 6. push
+
+* Git에서 push는 로컬 저장소에 커밋된 파일을 원격 저장소로 등록하는 명령어 입니다.
+
+```git
+$ git remote add [원격 저장소 별칭] [등록 할 레포지토리 url]
+$ git push [원격 저장소 별칭] [등록 할 브랜치 이름]
+```
+> remote 및 push 사용법
+
+* 아까 커밋하였던 hi.py를 제 github 레포지토리에 업로드 하겠습니다.
+
+* 먼저 원격 저장소를 등록합시다.
+
+![image](https://user-images.githubusercontent.com/65354879/204136472-c7693af3-eab7-4b64-8ff0-c0ff9f60752e.png)
+
+* 그 후 push를 통해 업로드하고 원격 저장소에 잘 반영되었는지 확인해보겠습니다.
+
+![image](https://user-images.githubusercontent.com/65354879/204136899-0b4d5925-1da4-412b-9a57-48e67c339583.png)
+
+![image](https://user-images.githubusercontent.com/65354879/204137079-fa3d2cb0-c5b7-4021-afb4-3ea5929915c8.png)
+
+* 기존에 있던 Readme 파일을 제외하면, hi.py가 잘 등록된 것을 확인할 수 있습니다.
 
 ## 7. pull
 
