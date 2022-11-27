@@ -2,7 +2,7 @@
 
 ## 1. add
 
-* Git 에서 add 커맨드는 워킹 디렉토리(Working Directory) 상의 변경 내용을 스테이징 영역에 추가하는 명령어 입니다.
+* Git 에서 add 커맨드는 워킹 디렉토리(Working Directory) 상의 변경 내용을 스테이징 영역에 추가하는 명령어입니다.
 
 ```git
 $ git add [디렉토리 or 파일 이름]
@@ -22,7 +22,7 @@ $ git add [디렉토리 or 파일 이름]
 
 ## 2. commit
 
-* Git에서 커밋은 의미 있는 변경 작업들을 저장소에 기록하는 명령어 입니다.
+* Git에서 커밋은 의미 있는 변경 작업들을 저장소에 기록하는 명령어입니다.
 
 ```git
 $ git commit -m "commit message"
@@ -37,7 +37,7 @@ $ git commit -m "commit message"
 
 ## 3. log
 
-* Git에서 log는 커밋된 내역을 확인하는 명령어 입니다.
+* Git에서 log는 커밋된 내역을 확인하는 명령어입니다.
 
 ```git
 $ git log [options]
@@ -53,7 +53,7 @@ $ git log [options]
 
 ## 4. show
 
-* Git에서 show는 태그나 커밋 정보를 보고 싶을 때 사용하는 명령어 입니다.
+* Git에서 show는 태그나 커밋 정보를 보고 싶을 때 사용하는 명령어입니다.
 
 ```git
 $ git show [options]
@@ -68,7 +68,7 @@ $ git show [options]
 
 ## 5. clone 
 
-* Git에서 clone은 원격 저장소에 있는 레포지토리의 파일를 복제하는 명령어 입니다.
+* Git에서 clone은 원격 저장소에 있는 레포지토리의 파일를 복제하는 명령어입니다.
 
 ```git
 $ git clone [url]
@@ -89,7 +89,7 @@ $ git clone [url]
 
 ## 6. push
 
-* Git에서 push는 로컬 저장소에 커밋된 파일을 원격 저장소로 등록하는 명령어 입니다.
+* Git에서 push는 로컬 저장소에 커밋된 파일을 원격 저장소로 등록하는 명령어입니다.
 
 ```git
 $ git remote add [원격 저장소 별칭] [등록 할 레포지토리 url]
@@ -112,6 +112,26 @@ $ git push [원격 저장소 별칭] [등록 할 브랜치 이름]
 * 기존에 있던 Readme 파일을 제외하면, hi.py가 잘 등록된 것을 확인할 수 있습니다.
 
 ## 7. pull
+
+* Git에서 pull은 원격 저장소에 있던 수정 내역을 로컬 저장소로 불러오는 명령어입니다.
+
+```git
+$ git pull [원격 저장소 별칭] [불러들일 브랜치 이름]
+```
+> pull 사용법
+
+* 원격 저장소에서 파일을 하나 만들고 그것을 pull 하여 보겠습니다.
+
+![image](https://user-images.githubusercontent.com/65354879/204137722-a4281dc8-d876-4f1d-86e9-bab588c58232.png)
+
+* 원격 저장소에서 bye.py 파일을 생성하였습니다. 이것을 pull 한 후 로컬 저장소에 잘 반영되었는지 확인하겠습니다.
+
+![image](https://user-images.githubusercontent.com/65354879/204137767-b418304b-e883-4980-8313-9d0265a0ea88.png)
+
+![image](https://user-images.githubusercontent.com/65354879/204137795-b6a0874f-d648-4089-83c7-31eab3f4c30e.png)
+
+* bye.py 가 로컬 저장소에 잘 반영된 것을 확인할 수 있습니다.
+
 
 ## 8. fetch
 
