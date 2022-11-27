@@ -180,6 +180,6 @@ $ git merge [options] [브랜치 이름]
 
 ## 11. rebase
 
-
+* Git에서 rebase는 용어 그대로 베이스를 다시 설정하는 작업입니다.
 
 ## 12. reset
