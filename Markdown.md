@@ -198,3 +198,19 @@ print(add(x, y))
 * **다음과 같은 결과를 확인할 수 있습니다.**
 
 <img src=https://user-images.githubusercontent.com/65354879/204290404-61cadabf-d88e-4b96-b5ca-e91d09f9e658.png weight=200 height=200>
+
+## 9. 각주
+
+> Markdown에서는 각주를 추가 할 수 있습니다.
+
+* 만약에 다음과 같이 작성하게 된다면,
+
+```
+저의 깃허브 메인 페이지 링크는 여기를 참고해주세요[^1]!
+[^1]: https://github.com/yousung1020
+```
+
+* **다음과 같은 결과를 확인할 수 있습니다.
+
+저의 깃허브 메인 페이지 링크는 여기를 참고해주세요[^1]!
+[^1]: https://github.com/yousung1020
