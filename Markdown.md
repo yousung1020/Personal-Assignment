@@ -157,7 +157,7 @@ print(add(x, y))
 
 >  Markdown에서는 <br> 태그를 통해 줄바꿈을 할 수 있습니다.
 
-* 만약에 다음과 같이 작성하게 된다면
+* 만약에 다음과 같이 작성하게 된다면,
 
 ```
 안녕하세요!
@@ -173,3 +173,28 @@ print(add(x, y))
 <br>
 이것은 줄바꿈입니다!
 
+## 8. 사진 첨부
+
+> Markdown에서는 사진을 복붙 할 수 있습니다.
+
+* 만약에 다음과 같이 작성하게 된다면,
+
+```
+![image](https://user-images.githubusercontent.com/65354879/204290404-61cadabf-d88e-4b96-b5ca-e91d09f9e658.png)
+```
+
+* **다음과 같은 결과를 확인할 수 있습니다.**
+
+![image](https://user-images.githubusercontent.com/65354879/204290481-3a49dd2b-c1a1-4bec-9c54-285a97ce2c71.png)
+
+> 집 고양이입니다.
+
+* 사진 크기를 바꾸려면 html 문법으로 바꾸어 작성 후 weight 와 height 값을 조정하면 됩니다. 예를 들어 다음과 같이 작성하게 된다면,
+
+```
+<img src=https://user-images.githubusercontent.com/65354879/204290404-61cadabf-d88e-4b96-b5ca-e91d09f9e658.png weight=200 height=200>
+```
+
+* **다음과 같은 결과를 확인할 수 있습니다.**
+
+<img src=https://user-images.githubusercontent.com/65354879/204290404-61cadabf-d88e-4b96-b5ca-e91d09f9e658.png weight=200 height=200>
