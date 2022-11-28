@@ -180,6 +180,35 @@ $ git merge [options] [브랜치 이름]
 
 ## 11. rebase
 
-* Git에서 rebase는 용어 그대로 베이스를 다시 설정하는 작업입니다.
+* Git에서 rebase는 용어 그대로 베이스를 다시 설정하는 작업입니다. 쉽게 얘기하자면 파생된 브랜치의 기준이 되는 베이스 커밋을 변경하는 것입니다.
+
+```git
+$ git rebase [options] [브랜치 이름]
+...etc
+```
+> rebase 사용법
+
+* 폴더를 따로 하나 만들어 rebase에 대해 소개하겠습니다. a.py 라는 파일을 커밋 후 브랜치를 생성하여 b,py 를 생성과 a.py 를 수정하고 커밋한 다음 rebase 해보겠습니다.
+
+
+![image](https://user-images.githubusercontent.com/65354879/204172132-61f71e1b-e64b-41db-8a65-75d7c4490157.png)
+
+![image](https://user-images.githubusercontent.com/65354879/204173137-fd0cd488-500f-4e08-91c2-80d1d898b99e.png)
+
+![image](https://user-images.githubusercontent.com/65354879/204173280-5c4ea217-a38d-447c-ab1e-4cda1e91f645.png)
+
+* 여기서 rebase를 하게되면 충돌이 나게 됩니다. --continue를 통해 코드 수정 후 rebase를 진행할 수 있습니다.
+
+![image](https://user-images.githubusercontent.com/65354879/204173476-0edfd2c4-9c17-435e-a527-a64449787a81.png)
+
+![image](https://user-images.githubusercontent.com/65354879/204173607-795248a2-1edb-4411-b368-6c510e7a7d9f.png)
+
+* rebase 를 성공했으므로 main 브랜치를 reabse 브랜치에 병합시킨 후 rebase 브랜치를 삭제하겠습니다.
+
+![image](https://user-images.githubusercontent.com/65354879/204173836-35994b4f-ce9c-473f-a706-a3609dcf322c.png)
+
+![image](https://user-images.githubusercontent.com/65354879/204173926-c9461256-b41d-4eb8-a22c-5fc69c8e81cb.png)
+
+* 성공적으로 브랜치를 rebase 하고 merge 까지 수행하였습니다.
 
 ## 12. reset
