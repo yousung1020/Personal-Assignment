@@ -220,3 +220,10 @@ $ git reset [options] [commit id or head position]
 $ git revert [head position]
 ```
 > reset/revert 사용법
+
+* --soft 옵션: reset 할 때에 스테이징 area와 워킹 디렉토리는 reset하지 않습니다. 
+
+* --mixed(안씀) 옵션: 스테이징 area만 reset의 커밋 내용을 반영시키고, 워킹 디렉토리에는 반영하지 않습니다. 
+ 
+* --hard 옵션: reset한 커밋의 내용을 스테이징 area, 워킹 디렉토리에 모두 반영합니다.
+
