@@ -211,4 +211,12 @@ $ git rebase [options] [브랜치 이름]
 
 * 성공적으로 브랜치를 rebase 하고 merge 까지 수행하였습니다.
 
-## 12. reset
+## 12. reset/revert
+
+* reset과 revert는 커밋의 시점을 바꾸는 명령어입니다. --soft, --hard, --mixed(안써도 됨) 옵션을 통해 원하는대로 reset 할 수 있습니다.
+
+```git
+$ git reset [options] [commit id or head position]
+$ git revert [head position]
+```
+> reset/revert 사용법
